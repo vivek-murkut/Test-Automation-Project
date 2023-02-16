@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AmazonSuite" thread-count="4" parallel="classes">
+	<test name="ChromeTest">
+		<parameter name="browser" value="Chrome"></parameter>
+
+		<classes>
+			<class name="AmazonTestNg.ApplicationLaunch" />
+			<class name="AmazonTestNg.SelectProdut1" />
+			<class name="AmazonTestNg.BuyProduct" />
+			<class name="AmazonTestNg.CreateNewAccount" />
+		</classes>
+	</test> <!-- AmzonTest -->
+	
+		<test name="EdgeTest">
+		<parameter name="browser" value="Edge"></parameter>
+
+		<classes>
+			<class name="AmazonTestNg.ApplicationLaunch" />
+			<class name="AmazonTestNg.SelectProdut1" />
+			<class name="AmazonTestNg.BuyProduct" />
+			<class name="AmazonTestNg.CreateNewAccount" />
+		</classes>
+	</test> <!-- AmzonTest -->
+	
+	
+</suite> <!-- AmazonSuite -->
